@@ -1,0 +1,191 @@
+body{
+    background-color: #EFF6FF;
+}
+.banner {
+    background-image: url('../images/banner-back.png'); /* Specify the path to your image */
+    background-size: cover; /* Ensure the background image covers the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    height: 80vh;
+}
+
+/* scroll */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #61616124;
+}
+::-webkit-scrollbar-thumb {
+    background: #3B82F6;
+    border-radius: 10px;
+}
+
+/* Font */
+.leading-font-main {
+    font-size: 48px;
+    font-weight: 600;
+}
+.leading-font-second {
+    font-size: 18px;
+    font-weight: 400;
+}
+.leading-pill{
+    color: #3B82F6;
+}
+.font-main {
+    color: #3B82F6;
+}
+.font-second {
+    color: #374151;
+}
+
+/* Navbar */
+.nav-menu-center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    column-gap: 26px;
+}
+.nav-link:hover {
+    color: #3B82F6; /* Your desired hover color */
+  }
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #EFF6FF !important;
+}
+
+/* Button */
+.btn-default {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 7px 20px;
+    text-wrap: nowrap;
+}
+.active {
+    color: #3B82F6 !important;
+}
+.menu {
+    background: none;
+    border: none;
+}
+
+/* Section */
+.section-name {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    color: #3B82F6;
+}
+.section-title {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+/* Card */
+.e-card {
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+    position: relative;
+    width: ;
+    height: 330px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .wave {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    /* background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb); */
+  }
+  .wave-1 {
+    background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+  }
+  .wave-2 {
+    background: linear-gradient(744deg,#bfa5d1,#936BBE 60%,#E5B9E6);
+  }
+  .wave-3 {
+    background: linear-gradient(744deg,#444141,#05B5D0 60%,#AADCE4);
+  }
+  .wave-4 {
+    background: linear-gradient(744deg,#3a3837,#E78B40 60%,#ECBE9F);
+  }
+  .wave-5 {
+    background: linear-gradient(744deg,#7a6367,#DB3753 60%,#EF8B9C);
+  }
+  .wave-6 {
+    background: linear-gradient(744deg,#66785d,#3CB802 60%,#A6DD8D);
+  }
+  
+  .icon {
+    width: 3em;
+    margin-top: -1em;
+    padding-bottom: 1em;
+  }
+  
+  .infotop {
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    top: 5.6em;
+    left: 0;
+    right: 0;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
+  
+  .name {
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    top: 1em;
+    text-transform: lowercase;
+    padding: 15px;
+  }
+  
+  .wave:nth-child(2),
+  .wave:nth-child(3) {
+    top: 250px;
+  }
+  
+  .playing .wave {
+    border-radius: 40%;
+    animation: wave 3000ms infinite linear;
+  }
+  
+  .wave {
+    border-radius: 40%;
+    animation: wave 55s infinite linear;
+  }
+  
+  .playing .wave:nth-child(2) {
+    animation-duration: 4000ms;
+  }
+  
+  .wave:nth-child(2) {
+    animation-duration: 50s;
+  }
+  
+  .playing .wave:nth-child(3) {
+    animation-duration: 5000ms;
+  }
+  
+  .wave:nth-child(3) {
+    animation-duration: 45s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
