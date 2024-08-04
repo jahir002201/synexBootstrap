@@ -15,7 +15,7 @@ body{
     height: 5px;
 }
 ::-webkit-scrollbar-track {
-    background: #61616124;
+    background: transparent;
 }
 ::-webkit-scrollbar-thumb {
     background: #3B82F6;
@@ -76,10 +76,12 @@ body{
     margin-bottom: 0.25rem;
     font-weight: 500;
     color: #3B82F6;
+    font-size: 18px;
 }
 .section-title {
-    margin-bottom: 0.25rem;
-    font-weight: 500;
+  margin-bottom: 0.25rem;
+  font-weight: 649;
+  font-size: 37px;
 }
 
 /* Card */
@@ -189,3 +191,101 @@ body{
       transform: rotate(360deg);
     }
   }
+
+  /* JB */
+.btn-round{
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 400; 
+cursor: pointer;
+}
+  .faded-ball {
+    box-shadow: 0px 0px 500px 200px #efeee6;
+    right: 215px;
+    top: 33px;
+    position: absolute;
+    z-index: -1;
+}
+.banner{
+  position: relative;
+  z-index: -2;
+}
+.w-505{
+  width: 505px;
+}
+
+.image-record {
+  background-image: url(../images/Frame10.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 83%;
+  height: 79vh;
+  border: 7px solid #3b82f6;
+  transform: rotate(10deg);
+  border-radius: 27px;
+  margin-left: 30px;
+}
+.text-record{
+  margin-top: -5px;
+  font-size: 17px;
+  padding: 5px;
+}
+.p-lr{
+  padding-left: 16px;
+  padding-right: 48px;
+}
+.project-card{
+  width: 25rem;
+  border-radius: 20px;
+  background: transparent;
+}
+.project-card:hover{
+  background-color: white;
+  border: 1px solid black;
+}
+.card-image{
+  height: 277px;
+  width: 100%;
+  padding: 13px;
+  border-radius: 18px;
+
+}
+.app-design{
+  width: 25%;
+  font-size: 14px;
+  color: black;
+  border-radius: 4px;
+  background-color: #bae6fd;
+  position: absolute;
+  left: 26px;
+  top: 216px;
+
+}
+.app-design:hover{
+  background-color: #bae6fd;
+  color: black;
+  
+
+}
+.font-700{
+  font-weight: 700;
+}
+.font-14{
+  font-size: 14px;
+  margin-top: 19px;
+  margin-bottom: 34px !important;
+}
+.arrow{
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.pl-10{
+  padding-left: 10rem;
+}
+.left{
+  margin-right: 2rem;
+}
+.right{
+  margin-right: 4rem;
+}
