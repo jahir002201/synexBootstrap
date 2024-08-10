@@ -488,12 +488,63 @@ cursor: pointer;
 .arrow{
   clip-path: inset(0px 0px 32px 0px); 
 }
-.member-name{
+.member {
+  position: relative; /* Ensure .member is the reference for absolute positioning */
+  transition: 0.5s;
+}
+
+.member:hover {
+  transform: translateY(-25px);
+  z-index: 1;
+}
+
+.member:hover .memeber-position {
+  /* margin-bottom: 0; */
+}
+
+.memeber-expertise {
+  position: absolute; /* Position absolutely to prevent affecting the layout */
+  bottom: 25px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px); /* Center horizontally and move down */
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0;
+  visibility: hidden; /* Hide the element initially */
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+  width: 100%;
+}
+
+.member:hover .memeber-expertise {
+  opacity: 1;
+  visibility: visible; /* Make the element visible */
+  transform: translateX(-50%) translateY(0); /* Center horizontally and move up */
+ 
+}
+.member-card a img{
+  transition: 0.5s;
+}
+.member:hover .member-card a img {
+  transform: translateY(63px) ;
+  transition: 0.5s;
+
+}
+
+.member-name {
   font-size: 30px;
 }
-.memeber-position{
+
+.memeber-position {
   font-size: 14px;
   font-weight: 500;
+}
+
+.member-card a {
+  transform: translateY(20px);
+}
+
+.member-card a:hover {
+  transform: scale(1.1);
 }
 .line{
   border-bottom: 1px solid #00000033;
